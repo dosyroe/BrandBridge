@@ -11,7 +11,7 @@ const MainBlock = () => {
       <h1>Популярные бренды</h1>
       <div className="brands-block">
         <div className="populat-brands">
-          <BrandsBlock image={'url("/img/logo-brands/nike.png")'} />
+          <BrandsBlock image={'url("/img/logo-brands/nike.jpg")'} />
           <BrandsBlock image={'url("/img/logo-brands/vetem.jpg")'} />
           <BrandsBlock image={'url("/img/logo-brands/yeezy.jpg")'} />
           <BrandsBlock image={'url("/img/logo-brands/adidas.svg")'} />
@@ -25,13 +25,13 @@ const MainBlock = () => {
       <h1>Популярные товары</h1>
       <div className="love-items">
         <h2 className="h2 h2-vetem">vetements</h2>
-          <ItemsBlock brandName={'vetem'} size={'200px 300px'}/>
+          <ItemsBlock brandName={'vetem'} size={'200px 260px'}/>
         <h2 className="h2 h2-nike">nike</h2>
-        <ItemsBlock brandName={'nike'} size={'200px 300px'}/>
+        <ItemsBlock brandName={'nike'} size={'200px 260px'}/>
         <h2 className="h2 h2-yeezy">yeezy</h2>
         <ItemsBlock brandName={'yeezy'} size={'240px 220px'}/>
         <h2 className="h2 h2-adidas">adidas</h2>
-        <ItemsBlock brandName={'adidas'} size={'200px 300px'}/>
+        <ItemsBlock brandName={'adidas'} size={'200px 260px'}/>
       </div> 
     </main>
   );

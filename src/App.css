@@ -36,3 +36,21 @@ App {
     transform: rotate(360deg);
   }
 }
+/* Анимация появления */
+/* Анимация появления */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px); /* Лёгкий сдвиг вниз */
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.hide-during-transition {
+  opacity: 0;
+  pointer-events: none; /* Отключает взаимодействие с элементами */
+  transition: opacity 300ms ease-in-out;
+}
