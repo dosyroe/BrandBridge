@@ -25,13 +25,13 @@ const MainBlock = () => {
       <h1>Популярные товары</h1>
       <div className="love-items">
         <h2 className="h2 h2-vetem">vetements</h2>
-          <ItemsBlock brandName={'vetem'}/>
+          <ItemsBlock brandName={'vetem'} size={'200px 300px'}/>
         <h2 className="h2 h2-nike">nike</h2>
-        <ItemsBlock brandName={'nike'}/>
+        <ItemsBlock brandName={'nike'} size={'200px 300px'}/>
         <h2 className="h2 h2-yeezy">yeezy</h2>
-        <ItemsBlock brandName={'yeezy'}/>
+        <ItemsBlock brandName={'yeezy'} size={'240px 220px'}/>
         <h2 className="h2 h2-adidas">adidas</h2>
-        <ItemsBlock brandName={'adidas'}/>
+        <ItemsBlock brandName={'adidas'} size={'200px 300px'}/>
       </div> 
     </main>
   );
