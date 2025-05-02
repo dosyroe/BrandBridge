@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #f8f8f8;
+  --font-size-small: 14px;
+  --font-size-medium: 18px;
+  --border-radius: 5px;
+  --transition-duration: 0.3s;
+}
+
+body {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--secondary-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
