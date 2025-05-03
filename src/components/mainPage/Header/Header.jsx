@@ -13,7 +13,6 @@ const Header = () => {
         <Link to="/support">Обратная связь</Link>
         <Link to="/contacts">Контакты</Link>
         <Link to="/delivery">Доставка и возврат</Link>
-
       </nav>
       <div className="buttons">
         <button>

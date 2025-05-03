@@ -39,11 +39,11 @@
     left: 280px;
 }
 
-p {
+.Form p {
     width: 700px;
 }
 
-input {
+.Input input {
     border: 0px solid #000;
     border-bottom: 1px solid #6B6868;
     color: #6B6868;
