@@ -1,0 +1,81 @@
+.Block2 {
+    width: 100vw;
+    height: 100vh;    
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    gap: 100px;
+
+    background-color: #f1f1f1;
+}
+
+.Form2 {
+    width: 800px;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+
+    border-radius: 25px;
+
+    border: 1px solid #000;
+    
+}
+
+.Form2 img {
+    width: 35px;
+    height: 35px;
+
+    position: absolute;
+
+    top: 120px;
+    left: 280px;
+}
+
+p {
+    width: 500px;
+    font-size: 20px;
+}
+
+.p {
+    text-align: left;
+}
+
+
+.Social {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 550px;
+    height: 550px;
+
+    gap: 20px;
+}
+
+.Social p {
+    width: 500px;
+    text-align: center;
+}
+
+.form-block {
+    width: 600px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 200px;
+}

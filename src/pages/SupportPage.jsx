@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import './SupportPage.css'
 import SuppBlock from "../components/supportPage/MainBlock/Block";

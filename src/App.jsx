@@ -6,10 +6,11 @@ import './App.css';
 import MainPage from "./pages/MainPage";
 import SupportPage from "./pages/SupportPage";
 import NotFound from "./pages/404";
+import ContactsPage from "./pages/ContactsPage";
 
 function AnimatedRoutes() {
   const location = useLocation();
-  const nodeRef = useRef(null); // Создаём ссылку для DOM-узла
+  const nodeRef = useRef(null);
 
   return (
     <TransitionGroup>
@@ -17,13 +18,13 @@ function AnimatedRoutes() {
         key={location.key}
         classNames="fade"
         timeout={300}
-        nodeRef={nodeRef} // Передаём ссылку в CSSTransition
+        nodeRef={nodeRef}
       >
         <div ref={nodeRef}>
           <Routes location={location}>
             <Route path="/" element={<MainPage />} />
             <Route path="/support" element={<SupportPage />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/contacts" element={<ContactsPage />} />
           </Routes>
         </div>
       </CSSTransition>
@@ -35,7 +36,12 @@ function App() {
   return (
     <Router>
       <AnimatedRoutes />
+      <Routes location={location}>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Router>
+
+    
   );
 }
 
