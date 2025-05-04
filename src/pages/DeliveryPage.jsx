@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import './DeliveryPage.css';
@@ -7,8 +7,17 @@ import Accordion from "../components/deliveryPage/Accordion";
 import Block from '../components/deliveryPage/Block'
 
 const DeliveryPage = () => {
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 200);
+  
+      return () => clearTimeout(timer);
+    }, []);
     return (
-        <>
+        <div className={`page-content ${isVisible ? "visible" : ""}`}>
         <div className="page">
                 <Link to="/"><img src="/public/img/icons/left-arrow.png" alt="" /></Link>
                 <div className="main">
@@ -28,7 +37,7 @@ const DeliveryPage = () => {
             
         </div>
         <Footer />
-        </>
+        </div>
     );
 };
 

@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 import "./ContactsPage.css";
 
 const ContactsPage = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 200);
+  
+      return () => clearTimeout(timer);
+    }, []);
   return (
+    <div className={`page-content ${isVisible ? "visible" : ""}`}>
     <div className="Block2">
       <div className="Form2">
         <div className="form-block">
@@ -24,6 +34,7 @@ const ContactsPage = () => {
         Нам очень важно, чтобы вы остались довольны своими покупками, поэтому по любым срочным вопросом - обращайтесь!
         </p>
       </div>
+    </div>
     </div>
   );
 };
