@@ -24,7 +24,6 @@ header {
   .buttons {
     display: flex;
     height: 35px;
-    width: 35px;
     gap: 10px;
   }
   .buttons button {
@@ -44,7 +43,7 @@ header {
     outline: inherit;
   }
   .buttons button:hover {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
   }
   .icon-btn {
     height: 35px;

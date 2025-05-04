@@ -1,0 +1,46 @@
+.Main-Block {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.banner {
+    width: 2000px;
+    height: 300px;
+  
+    margin: 25px 0;
+  
+    border-radius: 10px;
+  
+    background-image: url("../../public/img//logo-brands/vetem.jpg"); /* в 2× больше, например 600×400 */
+    background-size: 440px; /* как object-fit: cover */
+    background-position: center; /* центрируем */
+    background-repeat: no-repeat;
+
+    background-color: #010101;
+}
+
+.Main-Block img {
+    width: 35px;
+    height: 35px;
+
+    position: absolute;
+
+    top: 530px;
+    left: 70px;
+}  
+
+.itemss {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 100px;
+
+    margin: 75px 0;
+  }
+
+.items {
+    gap: 50px;
+}
+

@@ -3,6 +3,7 @@ import './Main.css';
 
 import BrandsBlock from './componentsMainBlock/BrandsBlock';
 import ItemsBlock from './componentsMainBlock/ItemsBlock';
+import { Link } from 'react-router-dom';
 
 const MainBlock = () => {
   return (
@@ -12,7 +13,7 @@ const MainBlock = () => {
       <div className="brands-block">
         <div className="populat-brands">
           <BrandsBlock image={'url("/img/logo-brands/nike.jpg")'} />
-          <BrandsBlock image={'url("/img/logo-brands/vetem.jpg")'} />
+          <Link to='/vetements'><BrandsBlock image={'url("/img/logo-brands/vetem.jpg")'} /></Link>
           <BrandsBlock image={'url("/img/logo-brands/yeezy.jpg")'} />
           <BrandsBlock image={'url("/img/logo-brands/adidas.svg")'} />
         </div>

@@ -7,7 +7,7 @@ import Accordion from "../components/deliveryPage/Accordion";
 import Block from '../components/deliveryPage/Block'
 
 const DeliveryPage = () => {
-      const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
       
         useEffect(() => {
           const timer = setTimeout(() => {

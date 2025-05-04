@@ -36,9 +36,9 @@ App {
     transform: rotate(360deg);
   }
 }
-
-
-.page-content {
+/* Анимация появления */
+/* Анимация появления */
+.fade-enter {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
